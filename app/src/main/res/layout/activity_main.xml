@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="Asysyifa Zahra Salsabila"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="293dp"
+        android:layout_height="312dp"
+        android:src="@drawable/me"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/titleJenisKelamin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin:"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/isiJenisKelamin"
+        app:layout_constraintEnd_toStartOf="@+id/isiJenisKelamin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/isiJenisKelamin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:fontFamily="casual"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="476dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleJenisKelamin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleHobi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hobi:"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/isiHobi"
+        app:layout_constraintEnd_toStartOf="@+id/isiHobi"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/isiHobi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Skincare-an"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:fontFamily="casual"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="516dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleHobi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleQuotes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fav Quotes"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="604dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/isiQuotes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/isiQuotes"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="EXPECT nothing APPRECIATE everything"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleQuotes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
